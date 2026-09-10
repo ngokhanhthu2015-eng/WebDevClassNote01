@@ -43,4 +43,50 @@
 
     <p><a href="#top">Back to Top</a></p>
   </body>
+  <fieldset>
+  <legend>Who is cooking?</legend>
+  <label for=""lastName">Last Name:</label>
+  <input
+    type=""text"
+    id=""firstName"
+    name=""firstName"
+    required
+    placeholder=""Dummy Text Hint"
+    maxlength=""15"
+  />
+</fieldset>
+<fieldset>
+  <legend>Set up User account</legend>
+  <label for="email">Email:</label>
+  <input name ="email" id="email" type=""email" required />
+  <br/>
+  <label for ="password">Password:</label>
+  <input name=""password" id="password" type=""password" required />
+</fieldset>
+<fieldset>
+  <legend>Checkbox Groups</legend>
+  <p>Check boxes allow the user to select more than one value at once. Group checkboxes (aka for the same answe) all share the same name attributes. The value attribute is what gets sent to the server if that checkbox is checked</p>
+  <label for="pet">What pets do you have?</label><br />
+  <!--you will sometimes see the label for individual checkboxes wrapped around the input itself-->
+  <label><input type="checkbox" name="pet" id="pet" value="dog" />DOG</label
+  <label></label><input type="checkbox" name="pet" id="pet" value="dog" />CAT</label
+  <label></label><input type="checkbox" name="pet" id="pet" value="dog" />FISH</label
+  <label></label><input type="checkbox" name="pet" id="pet" value="dog" />BIRD</label
+  >
+  <fieldset>
+    <legend>Radio Groups</legend>
+    <p>
+      Radio groups allow user to select only one value at a time. Grouped radio buttons (aka for the same answer) all share the same name attributes. The value attributes is what gét sent to the server if that radio button is selected.
+    </p>
+    <label for="favorite">Which ones your favourite?</label><br />
+    <label><input type="radio" name="pet" id="pet" value="dog" />DOG</label
+  <label><input type="radio" name="pet" id="pet" value="dog" />CAT</label
+  <label><input type="radio" name="pet" id="pet" value="dog" />FISH</label
+  <label><input type="radio" name="pet" id="pet" value="dog" />BIRD</label
+  </fieldset>
+</fieldset>
+<button role="button">Submit Form</button>
+<!-- This is how you use an input type as your submit button -->
+ <input type="submit" value="Submit Form" type="button" />
+</form>
 </html>

@@ -1,0 +1,163 @@
+<!-- ============================================================
+         THE FORM GOES HERE.
+
+         We build it together, one fieldset at a time:
+
+           1. Who is cooking?   text, email, password
+           2. The recipe        text, number, range, select
+           3. How hard is it?   radio    (one answer only)
+           4. Dietary tags      checkbox (several answers)
+           5. The actual food   textarea
+           6. Extras            file, url, date, color
+           7. Buttons           submit, reset
+
+         Start with the <form> tag itself and its attributes, then add
+         one fieldset at a time. Do not skip ahead -- the point is to
+         watch what each input type does in the browser as we add it.
+         ============================================================ -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Class Cookbook — Submit a Recipe</title>
+    <style>
+      #top {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+  <h1> Rina's Cookbook</h1>
+  <fieldset>
+    <legend>Who is cooking?</legend>
+    <label for=""lastName">Last Name:</label>
+    <input
+    type="text"
+    id="firstName"
+    name="Your name"
+    required
+    placeholder="Dummy Text Hint"
+    maxlength="15"
+    />
+    <br/>
+    <label for ="email">Email:</label>
+    <input name ="email" id="email" type="email" required /> <br/>
+    <label for ="password">Password:</label>
+    <input name="password" id="password" type="Password" required/> <br/>
+</fieldset>
+
+    <fieldset> 
+      <legend>The recipe</legend>
+      <label for="What's your dish?">Your dish: </label>
+      <input
+      type="text"
+      id="dish"
+      name="the dish"
+      required
+      placeholder="What dish that you're craving the most right now?"
+      maxlength="50"
+      length="50"
+      />
+      <br/>
+      <label for="Number">Number of serving:</label>
+      <input
+      type="number"
+      id="number"
+      name="number of serving"
+      required
+      placeholder="how many people?"
+      maxlength="50"
+      />
+      <br/>
+      <label for="Range">Level of flavourness:</label>
+      <input
+      type="range"
+      id="volume"
+      min="0"
+      max="100"
+      />
+      <br/>
+      <label for="event">Event type:</label><br />
+      <select id="event" name="event">
+        <option value="Party">Party</option>
+        <option value="Family dinner">Family dinner</option>
+        <option value="Home gathering">Home gathering</option>
+        <option value="Wedding">Wedding</option>
+</select>
+    </fieldset>
+
+    <fieldset> 
+      <legend>How hard is it?</legend>
+      <label for ="Level of difficulty">How hard would this dish be?</label><br />
+      <label>
+        <input type="radio" name="hardness" id ="hardness" value ="Very easy"/>Very easy</label><br />
+        <input type="radio" name="hardness" id ="hardness" value ="Easy"/>Easy</label><br />
+        <input type="radio" name="hardness" id ="hardness" value ="Medium"/>Medium</label><br />
+        <input type="radio" name="hardness" id ="hardness" value ="Hard"/>Hard</label><br />
+        <input type="radio" name="hardness" id ="hardness" value ="Very hard"/>Very hard</label><br />
+      </label>
+    </fieldset>
+
+    <fieldset> 
+      <legend>Dietary tags</legend>
+      <label for ="Dietary tags">Dietary tags</label><br />
+      <input
+      type ="checkbox"
+      name ="dietary tags"
+      id ="tags"
+      value ="Gluten-Free"/>Gluten-Free</label 
+      <br /> <br />
+      <input
+      type ="checkbox"
+      name ="dietary tags"
+      id ="tags"
+      value ="Dairy-Free" />Dairy-Free</label
+      <br /> <br />
+      <input
+      type ="checkbox"
+      name ="dietary tags"
+      id ="tags"
+      value ="Vegetarian" />Vegetarian</label
+      <br /> <br />
+      <input
+      type ="checkbox"
+      name ="dietary tags"
+      id ="tags"
+      value ="Halal" />Halal</label
+      <label/>
+      </fieldset>
+
+      <fieldset> 
+        <legend>The actual food</legend>
+        <label for="The actual food">List out the ingredients that you have</label><br />
+        <textarea name="The actual food" id="The actual food" cols="50" rows="8"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Extras</legend>
+        <label for="photo">A photo of the finished dish:</label>
+<input type="file" id="photo" name="photo">
+<br /><br />
+
+<label for="website">A link to your original recipes:</label>
+<input type="url" id="website" name="website" placeholder="https://example.com">
+<br /><br />
+
+<label for="date">The last time you made it:</label>
+<input type="date" id="date" name="date">
+<br /><br />
+
+<label for="color">The color of your page in the cookbook:</label>
+<input type="color" id="color" name="color">
+<br /><br />
+      </fieldset>
+
+  <fieldset> 
+    <legend>Buttons</legend>
+    <button type="Send it">Add to the cookbook</button>
+    <button type="reset">Start over</button>
+  </fieldset>
+    </fieldset>
+  </fieldset>
+  <p><a href="#top">Back to Top</a></p>
