@@ -1,0 +1,139 @@
+/* =========================
+   GENERAL PAGE
+   ========================= */
+
+body {
+    font-family: Georgia, serif;
+    color: #4a3b32;
+    background-color: #fff8f0;
+    margin: 0;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background-color: #8fbc8f;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+article {
+    background-color: white;
+    padding: 35px;
+    border: 2px solid #d8c3a5;
+}
+
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    color: #7a4e2d;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    color: #5f8d4e;
+    margin-top: 30px;
+}
+
+.description {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* =========================
+   IMAGE
+   ========================= */
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 600px;
+}
+
+figcaption {
+    color: #806f62;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+
+/* =========================
+   INGREDIENTS & INSTRUCTIONS
+   ========================= */
+
+section {
+    margin-bottom: 30px;
+}
+
+li {
+    font-family: Arial, sans-serif;
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #4a5d4a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer a {
+    color: #f5d6a6;
+    font-family: Arial, sans-serif;
+    margin: 0 10px;
+}
