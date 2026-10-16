@@ -1,0 +1,67 @@
+/* load fonts variables and other stylesheets first */
+
+/* grouped selector commas, think list of selectors */
+html,
+body {
+    margin: 0;
+}
+
+/* generic styles so that we can see our div element */
+div, header{
+    /* border shorthand assigns 3 values at once b
+    border-width, border-style, border-color */
+    border: 1px solid red;
+    padding: 50px;
+}
+/* absolute positioned element 
+without a positioned parent/ancestor = position = static
+this is how absolute position behave on their own */
+.abs-no-parent{
+    background-color: cornflowerblue;
+    position: absolute; 
+    top: 20%;
+    right: 200px;
+}
+
+.rel-parent {
+    background-color: blueviolet
+    width: 50%
+    /* height % doesn't work unless that element is inside of a element that has
+    a defined height */
+    /* viewpoint weight (VW) and viewpoint height (VH) take a % of your screen height or weight */
+    height: 200vh;
+    /* whenever you want to absolutely position an element inside
+    of or relative to a parent element, that parent element
+     must be positioned relative aka not default (static)*/
+     position: relative;
+}
+
+.abs-rel-parent {
+    background-color: rgba (12, 237, 16, 0.5);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    /*think layers in a drawing program
+    the higher the z, the more position z pushes element in front of other
+    negative (so am) send them back from where they render by default */
+    background-color: coral;
+}
+
+.cover {
+    position: fized ;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba (0, 0, 0, 0.5);
+    z-index: 10;
+}
