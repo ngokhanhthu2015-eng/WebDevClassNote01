@@ -4,10 +4,6 @@
 
 The Language of Flowers is a website exploring floriography, the language of flowers. It helps visitors discover the meanings and messages associated with different flowers and how they can express emotions that are difficult to put into words.
 
-## Live Website
-
-[View the website](PASTE-YOUR-GITHUB-PAGES-URL-HERE)
-
 ## Features
 
 - A homepage introducing floriography
