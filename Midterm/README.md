@@ -244,12 +244,9 @@ If I had more time to develop Rina's Garden, I would:
 
 The project repository should contain:
 
-- `index.html` — the website's HTML structure.
-- `style.css` — the website's visual styling and responsive rules.
-- `README.md` — project documentation.
-- Presentation slides — a copy of the midterm presentation, if required.
-
-The published GitHub Pages link should be added here:
-
-**Live Website:** [Insert your GitHub Pages URL]
+- `index.html`: the website's HTML structure.
+- `style.css`: the website's visual styling and responsive rules.
+- `README.md`: project documentation.
+- 
+**Live Website:**
 
