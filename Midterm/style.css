@@ -7,7 +7,7 @@
         --color-accent: #8B4B5A;
         --color-accent-dark: #683543;
         --color-border: #E3D9CC;
-        --color-green: #64745B,
+        --color-green: #64745B;
 }
 
 /* basic page styling */
@@ -20,11 +20,11 @@ html {
 }
 
 body {
-        margin: 0
-        background-color: var(--color_background);
-        color: var(--color-text);
-        font-family: 'Helvetica Neue', sans-serif;
-        line-height: 1.7;
+    margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.7;
 }
 
 img {
@@ -38,9 +38,9 @@ a {
 }
 
 h1, h2, h3 {
-        font-family:'Times New Roman', Times, serif
-        font-weight: 400;
-        line-weight: 1.2,
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
 }
 
 h2 {
@@ -84,14 +84,6 @@ p {
 
 /* navigation styling */
 
-.navbar {
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        background-color: var(--color-background);
-        border-bottom: 1px solid var(--color-border);
-}
-
 .nav-inner {
         min-height: 76px;
         display: flex;
@@ -102,53 +94,128 @@ p {
 
 .logo {
         color: var(--color-accent-dark);
-        font-family:'Times New Roman', Times, serif;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 1.5rem;
         font-weight: 600;
 }
 
-.nav-link {
-        display: flex;
-        align-items: center;
-        gap: 28px;
-        font-size: 0.88rem;
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    font-size: 0.88rem;
 }
 
 .nav-links a {
-        transition: color 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-        color: var(--color-accent);
+    color: var(--color-accent);
 }
 
-.nav-links a:hover {
-        color: var (--color-accent);
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 70px 6%;
 }
 
-.nav-links .nav-contact {
-        padding: 9px 16px;
-        border: 1px solid var (--color-accent);
-        border-radius: 30px;
-        color: var(--color-accent);
+.hero > .container {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Flower Collection */
+.flower-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.flower-card {
+    flex: 1 1 250px;
+    min-width: 0;
+    background-color: var(--color-paper);
+    border: 1px solid var(--color-border);
+}
+
+.flower-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.flower-card-content {
+    padding: 20px;
+}
+
+.flower-meaning {
+    display: inline-block;
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+/* Lyrics Section */
+.story-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.story-image {
+    width: 40%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.lyrics-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.lyrics-content iframe {
+    width: 100%;
+    max-width: 100%;
 }
 
 /* media queries */
 
-       @media only screen and (max-width: 767px) {
-        body {
+      @media (max-width: 768px) {
 
-            /* Make the navigation fit a smaller screen. */
-            .nav-inner {
-                flex-direction: column;
-                justify-content: center;
-                padding: 16px 0;
-                gap: 12px;
-            }
+    /* Navigation */
+    .nav-inner {
+        flex-direction: column;
+        justify-content: center;
+        padding: 16px 0;
+        gap: 12px;
+    }
 
-            .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 12px 18px;
-                font-size: 0.82rem;
-            }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+        font-size: 0.82rem;
+    }
